@@ -212,13 +212,8 @@ def main():
 
 
 if __name__ == '__main__':
-    device = 'cuda:0' if torch.cuda.is_available() else 'mps'
+    device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     print(f"Using device: {device}")
-
-    print("Current working directory:", os.getcwd())
-    print("Looking for data in:", params['root_dir'])
-    print("Full path:", os.path.abspath(params['root_dir']))
-
 
     restore_from_checkpoint = False
     initial_checkpoint_path = 'checkpoints/SELDnet_audio_visual_multiACCDOA_20250331_173131'

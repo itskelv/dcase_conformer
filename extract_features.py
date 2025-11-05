@@ -70,6 +70,8 @@ class SELDFeatureExtractor():
 
         if split == 'dev':
             audio_files = glob.glob(os.path.join(self.root_dir, 'stereo_dev', 'dev-*', '*.wav'))
+            print(f"Looking for audio files in: {os.path.join(self.root_dir, 'stereo_dev', 'dev-*', '*.wav')}")
+            print(f"Found {len(audio_files)} audio files")
         elif split == 'eval':
             audio_files = glob.glob(os.path.join(self.root_dir, 'stereo_eval', 'eval', '*.wav'))
         else:
