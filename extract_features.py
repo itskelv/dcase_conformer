@@ -35,9 +35,8 @@ class SELDFeatureExtractor():
         """
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.params = params
-        self.root_dir = params['root_dir']
-        print(self.root_dir)
-        self.feat_dir = params['feat_dir']
+        self.root_dir = '../DCASE2025_SELD_dataset'
+        self.feat_dir = '../DCASE2025_SELD_dataset/features'
 
         self.modality = params['modality']
 
