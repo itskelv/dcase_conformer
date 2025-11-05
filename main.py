@@ -86,9 +86,9 @@ def val_epoch(seld_model, dev_test_iterator, seld_loss, seld_metrics, output_dir
 
 
 def main():
-    # os.makedirs(params['log_dir'], exist_ok=True)
-    # os.makedirs(params['checkpoints_dir'], exist_ok=True)
-    # os.makedirs(params['output_dir'], exist_ok=True)
+    os.makedirs(params['log_dir'], exist_ok=True)
+    os.makedirs(params['checkpoints_dir'], exist_ok=True)
+    os.makedirs(params['output_dir'], exist_ok=True)
 
     if restore_from_checkpoint:
         print('Loading params from the initial checkpoint')

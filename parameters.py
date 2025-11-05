@@ -11,7 +11,7 @@ Date: January 2025
 params = {
 
     # choose task
-    'task': 'sed-doa-sde',
+    # 'task': 'sed-doa-sde',
 
     'modality': 'audio_visual',  # 'audio' or 'audio_visual'
     'net_type': 'SELDnet',
