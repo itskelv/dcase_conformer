@@ -1,0 +1,7 @@
+dcase-2025-env/
+checkpoints/
+eda_plots*/
+logs/
+images/
+extracted_files/
+outputs/
